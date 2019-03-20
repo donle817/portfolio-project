@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+
+}
+
+.navigation {
+background-color: rgb(250, 250, 250);
+overflow: visible;
+position: fixed;
+width: 100%;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.navigation a {
+display: inline-block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
+
+.linkContainer {
+float: right;
+}
+
+main {
+padding-bottom:40px;
+background-color: rgb(250, 250, 250)
+}
+
+.title {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 150%;
+  opacity: 0.8;
+  text-align: center;
+  font-weight: lighter;
+  color: beige;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 100px;
+  margin-top: 3%;
+  font-size: 100%;
+  opacity: 0.8;
+  text-align: center;
+  font-weight: lighter;
+  color: beige;
+}
+
+header {
+  padding-top: 60px;
+  padding-bottom: 20%;
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-image: url(images/dallasskyline.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 130%;
+  text-align: center;
+}
+
+section {
+  min-height: 200px;
+  padding: 2% 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sectionHeader {
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+section hr {
+  border: none;
+  height: 1px;
+  color: gray; 
+  background-color: gray; 
+  width: 100%;
+  opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutMeSection {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aboutMeParagraph {
+  font-size: 18px;
+  text-align: center;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectHeader {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.projectsSection {
+  margin-top: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 15px 45px;
+}
+
+.projectsSectionHeader {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectHeader {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.projectScreenshot {
+  width: 300px;
+}
+
+.projectDescription{
+  text-align: center;
+}
+.screenshotContainer {
+  width: 300px;
+  align-self: center;
+}
+
+.languageList {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.languageSymbol {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.projectButtons {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: rgb(0, 119, 181); 
+  border-radius: 2px;
+  color: black;
+  padding: 5px 0;
+  text-decoration: none;
+  width: 120px; 
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contactSection {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contactHeader {
+  margin-top: 15px;
+}
+
+.contactMethods {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contactMethod {
+  margin-top: 10px;
+  position: relative;
+}
+
+.contactLink, .contactSymbol {
+  vertical-align: middle;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: black;
+  width: 250px;
+  position: relative;
+  display: block;
+}
+
+.fa-envelope, .fa-github, .fa-linkedin {
+  font-size: 34px;
+  margin-right: 30px;
+}
+
+.contactSpan {
+  position: absolute;
+  width: 100px;
+  left: 100px;
+  top: 4px;
+}
+
+.linkedin {
+  margin-top: 22px;
+}
+
+.linkContainer {
+  float: right;
+}
+
+@media screen and (min-width: 650px) {
+  .aboutMeSection {
+    margin-top: 35px;
+  }
+  .aboutMeContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .project {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12% 2% 12%;
+    justify-content: space-around;
+  }
+  .projectDetails {
+    max-width: 80%;
+    margin-right: 10px;
+  }
+  .screenshotContainer {
+    min-width: 400px;
+  }
+  .projectScreenshot {
+    width: 100%;
+  }
+  .aboutMeParagraph, .projectDescription {
+    font-size: 20px;
+  }
+  .projectDescription{
+    max-width: 400px;
+  }
+  .projectTechSpecs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 360px;
+    height: 268px;
+    margin-left: 30px;
+  }
+  .button {
+    width: 120px;
+  }
+  .languageSymbol {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-top: 100px;
+  } 
+  .title {
+    font-size: 200%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:beige;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+  }
+  .subtitle {
+    font-size: 150%;
+    font-weight: 600;
+    color: beige;
+    letter-spacing: 1px;
+  }
+  .sectionHeader {
+    font-size: 24px;
+  }
+  .projectsSectionHeader {
+    font-size: 30px;
+  }
+  .projectHeader {
+    font-size: 28px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .linkContainer{
+    float: left;
+  }
+}
